@@ -1,0 +1,15 @@
+oauth_klasses:
+  TEST:
+    励销: LxDeploy
+
+users:
+  TEST:
+    励销:
+      organization:
+        name: 没有开通呼叫中心
+      users:
+      - uid: 45516652d2e0487a626e
+        token: 4e57bf7928f8d042d2183573032f06
+        authority:
+        - super
+

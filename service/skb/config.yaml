@@ -1,0 +1,26 @@
+#由于私有化环境有特殊的登录方法
+#所以需要按层级加载
+oauth_klasses:
+  TEST:
+    PC: PcDeploy
+
+users:
+  TEST:
+    IOS:
+      organization:
+        name: bliss
+      users:
+      - uid: 5515545
+        token: 532d522625be5f78f1ee44e398cad820
+      - uid: 5515579
+        token: d3aa291ebc03fcdfcb286a6897ad674c
+      - uid: 5515580
+        token: 4982dc1d0341b248660bb48cff65ea63
+      - uid: 5515581
+        token: 6e2219e6bfccc2ae0c6214ac290bd719
+      - uid: 5515582
+        token: 0ad9753a56c59f75b3ab8eb93b2902b1
+      - uid: 5515583
+        token: efd608eed5d89612eb56f0a616e9c7f4
+      - uid: 5515584
+        token: c9221dc5ae44676ca041f604a86d0e2e

@@ -1,0 +1,166 @@
+setting:
+  server: CRM
+  environment: STAGE
+  platform: PC
+
+
+SERVER:
+  UC:
+    TEST:
+      PC:
+        attr_pointer: PC
+        domain: https://uc-test.weiwenjia.com
+        db:
+          url: rm-m5ef10gzq1n5e7b9abo.mysql.rds.aliyuncs.com
+          schema: user_center_test
+          name: user_center_dev
+          pwd: pHB+!*Uv9Rl9
+          table_name:
+            UserDto: uc_users
+            DepartmentDto: uc_departments
+            UserDepDto: uc_users_departments
+            OrganizationDto: uc_organizations
+    STAGE:
+      PC:
+        attr_pointer: PC
+        domain: https://uc-staging.weiwenjia.com
+        db:
+          url: rm-m5ef10gzq1n5e7b9abo.mysql.rds.aliyuncs.com
+          schema: user_center_staging
+          name: user_center_dev
+          pwd: pHB+!*Uv9Rl9
+          table_name:
+            UserDto: uc_users
+            DepartmentDto: uc_departments
+            UserDepDto: uc_users_departments
+            OrganizationDto: uc_organizations
+  CRM:
+    私有化:
+      IOS:
+        attr_pointer: IOS
+        domain: http://crm-private-deploy.ikcrm.com
+        version_code: 3.31.1
+        device: ios
+      ANDROID:
+        attr_pointer: IOS
+        version_code: 3.31.1
+        device: android
+      PC:
+        attr_pointer: IOS
+    TEST:
+      钉钉:
+        domain: https://ding-test.ikcrm.com
+        db:
+          url: rdscbq34656z0ix59br0.mysql.rds.aliyuncs.com
+          schema: ding_test
+          name: ik_qa
+          pwd: 31BTsesM
+          table_name:
+            UserDto: users
+            DepartmentDto: departments
+            UserDepDto: users_departments
+            OrganizationDto: uc_organizations_crm_ik
+      IOS:
+        domain: https://ik-test.ikcrm.com
+        db:
+          url: rdscbq34656z0ix59br0.mysql.rds.aliyuncs.com
+          schema: crm_test
+          name: ik_qa
+          pwd: 31BTsesM
+          table_name:
+            UserDto: uc_users_crm_ik
+            DepartmentDto: uc_departments_crm_ik
+            UserDepDto: uc_users_departments_crm_ik
+            OrganizationDto: uc_organizations_crm_ik
+      ANDROID:
+      PC:
+    STAGE:
+      钉钉:
+        domain: https://ding-staging.ikcrm.com
+        db:
+          url: rm-m5eu4m6a4rugr22fcno.mysql.rds.aliyuncs.com
+          schema: ding_staging
+          name: ik_qa
+          pwd: 31BTsesM
+          table_name:
+            UserDto: users
+            DepartmentDto: departments
+            UserDepDto: users_departments
+            OrganizationDto: uc_organizations_crm_ik
+      IOS:
+        domain: https://ik-staging.ikcrm.com
+        db:
+          url: rm-m5eu4m6a4rugr22fcno.mysql.rds.aliyuncs.com
+          schema: crm_staging
+          name: ik_qa
+          pwd: 31BTsesM
+          table_name:
+            UserDto: uc_users_crm_ik
+            DepartmentDto: uc_departments_crm_ik
+            UserDepDto: uc_users_departments_crm_ik
+            OrganizationDto: uc_organizations_crm_ik
+      ANDROID:
+      PC:
+  JXC:
+    TEST:
+      励销:
+        domain: http://lixiaojxc-test.ikcrm.com
+        db:
+          url: rdscbq34656z0ix59br0.mysql.rds.aliyuncs.com
+          schema: lxjxc_testing
+          name: lxjxc_test
+          pwd: nHSX3EOq
+      钉钉:
+        domain: https://ik-test.ikcrm.com
+        db:
+          url: rdscbq34656z0ix59br0.mysql.rds.aliyuncs.com
+          schema: ik_invoicing_test
+          name: ikjxc_test
+          pwd: "#Jm07GhE"
+    STAGE:
+      励销:
+        domain: http://lixiaojxc-staging.ikcrm.com
+      钉钉:
+        domain: https://ik-staging.ikcrm.com
+  SKB:
+    TEST:
+      IOS:
+        domain: https://skb-test.weiwenjia.com
+        db:
+          url: rdscbq34656z0ix59br0.mysql.rds.aliyuncs.com
+          schema: yxy_skb_test
+          name: skb_read
+          pwd: iH9IM8kBp
+      ANDROID:
+      PC:
+    STAGE:
+      IOS:
+        domain: https://skb-staging.weiwenjia.com
+        db:
+          url: rdscbq34656z0ix59br0.mysql.rds.aliyuncs.com
+          schema: yxy_skb_test
+          name: skb_read
+          pwd: iH9IM8kBp
+      ANDROID:
+      PC:
+
+#默认属性
+PLATFORM:
+  PC:
+    attr_pointer: IOS
+  IOS:
+    attr_pointer: IOS
+    version_code: 3.31.1
+    device: ios
+  ANDROID:
+    attr_pointer: IOS
+    version_code: 3.31.1
+    device: android
+  钉钉:
+    attr_pointer: 钉钉
+    version_code: 3.13.2
+    device: dingtalk
+  励销:
+    attr_pointer: 励销
+    version_code: 3.13.2
+    device: dingtalk

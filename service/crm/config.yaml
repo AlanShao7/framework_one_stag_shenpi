@@ -1,0 +1,120 @@
+oauth_klasses:
+  私有化:
+    IOS: AndroidDeploy
+    ANDROID: AndroidDeploy
+    PC: PrivateDeploy
+  TEST:
+    钉钉: DingdingDeploy
+    IOS: AndroidDeploy
+    ANDROID: AndroidDeploy
+    PC: PcDeploy
+  STAGE:
+    IOS: AndroidDeploy
+    ANDROID: AndroidDeploy
+    PC: PcDeploy
+
+users:
+  私有化:
+    IOS:
+      organization:
+        name:
+      users:
+      - phone: 13866666666
+        authority:
+        - 超管
+  TEST:
+    IOS:
+      organization:
+        name: 没有开通呼叫中心
+      users:
+      - phone: 15802179832
+      - phone: 11333333333
+    钉钉:
+      organization:
+        name: 钉钉业绩目标测试
+      users:
+      - phone: 17144444444
+#      - phone: 17144444445
+#      - phone: 17144444446
+#      - phone: 17144444447
+#      - phone: 17144444448
+#      - phone: 17144444449
+#      - phone: 17144444450
+#      - phone: 17144444451
+#      - phone: 17144444452
+#      - phone: 17144444453
+#      - phone: 17144444454
+#      - phone: 17144444455
+#      - phone: 17144444456
+#      - phone: 17144444457
+#      - phone: 17144444458
+#      - phone: 17144444459
+#      - phone: 17144444460
+#      - phone: 17144444461
+#      - phone: 17144444462
+#      - phone: 17144444463
+#      - phone: 17144444464
+#      - phone: 17144444465
+#      - phone: 17144444466
+#      - phone: 17144444467
+#      - phone: 17144444468
+#      - phone: 17144444469
+#      - phone: 17144444470
+#      - phone: 17144444471
+#      - phone: 17144444472
+#      - phone: 17144444473
+#      - phone: 17144444474
+#      - phone: 17144444475
+#      - phone: 17144444476
+#      - phone: 17144444477
+#      - phone: 17144444478
+#      - phone: 17144444479
+#      - phone: 17144444480
+#      - phone: 17144444481
+#      - phone: 17144444482
+#      - phone: 17144444483
+#      - phone: 17144444484
+#      - phone: 17144444485
+#      - phone: 17144444486
+#      - phone: 17144444487
+#      - phone: 17144444488
+#      - phone: 17144444489
+#      - phone: 17144444490
+#      - phone: 17144444491
+#      - phone: 17144444492
+#      - phone: 17144444493
+#      - phone: 17144444494
+#      - phone: 17144444495
+#      - phone: 17144444496
+#      - phone: 17144444497
+      - phone: 17144444498
+  STAGE:
+    IOS:
+      organization:
+        name: 回归企业测试
+      users:
+      - phone: 11788888888
+        authority:
+        - applier
+      - phone: 12788888888
+      - phone: 13788888888
+        authority:
+        - normal
+      - phone: 14788888888
+        authority:
+        - normal
+      - phone: 15788888888
+      - phone: 16788888888
+      - phone: 17788888888
+      - phone: 19788888888
+      - phone: 19988888888
+        authority:
+        - super
+      - phone: 10788888888
+        authority:
+        - illegal
+      - phone: 11188888888
+        authority:
+        - pc
+#      oauth_klass: PcDeploy
+
